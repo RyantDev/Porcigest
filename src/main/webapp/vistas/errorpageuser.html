@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="../css/errorlogin.css" rel="stylesheet" type="text/css"/>
+        
+        
+    </head>
+    <body>
+        
+      
+<div class="popup" id="error">
+    <div class="popup-content">
+        <div class="imgbox">
+            <img src="../Imagenes/X.png" alt="" class="img">
+        </div>
+        <div class="title">
+            <h3>OOPS!:(</h3>
+        </div>
+        <p class="para">Parece que no estas registrado</p>
+        <form action="">
+            <a href="Login.jsp" class="button" id="e_button">Intentar de nuevo</a>
+        </form>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("error").style.display = "block";
+    });
+</script>
+    
+    
+    
+    </body>
+</html>

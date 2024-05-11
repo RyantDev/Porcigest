@@ -1,0 +1,99 @@
+/* Estilos para el formulario de eventos */
+.event-form {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.event-form h3 {
+    color: #333;
+    text-align: center;
+}
+
+#eventName, #eventNote, #eventDate {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#eventName::placeholder, #eventNote::placeholder {
+    color: #ccc;
+}
+
+#eventNote {
+    height: 100px;
+}
+
+#addEvent {
+    background: #0074D9;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+#addEvent:hover {
+    background: #0056A3;
+}
+
+/* Estilos para la lista de eventos */
+.event-list {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.event-list h3 {
+    color: #333;
+    text-align: center;
+}
+
+#events {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-item {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-item button {
+    background: #0074D9;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.event-item button:hover {
+    background: #0056A3;
+}
+
+/* Estilos para hacer la página responsive */
+@media (max-width: 600px) {
+    .event-form, .event-list {
+        max-width: 100%;
+    }
+}
