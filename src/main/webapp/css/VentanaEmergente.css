@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.modal-container {
+    display: flex;
+    background-color: #5f6769;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.modal {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+button {
+    background-color: #002fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+/* Media queries para hacer que el diseÃ±o sea responsivo */
+@media (max-width: 768px) {
+    .modal {
+        width: 100%;
+        padding: 30px 10px;
+    }
+}
+
+.close {
+    cursor: pointer;
+    color: #ff0000;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+    float: right;
+    font-weight: bold;
+    margin: 5px;
+    
+}
+.modal-contenedor{
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formulario {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.modal-contenedor label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-contenedor input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-contenedor button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0c3b86;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-contenedor button:hover {
+    background-color: #00145b;
+}
+
+
